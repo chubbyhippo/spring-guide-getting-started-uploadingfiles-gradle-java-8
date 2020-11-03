@@ -1,4 +1,4 @@
-package com.example.uploadingfiles;
+package com.example.uploadingfiles.storage;
 
 import java.nio.file.Path;
 import java.util.stream.Stream;
