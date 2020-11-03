@@ -1,12 +1,18 @@
 package com.example.uploadingfiles.storage;
 
-import java.net.URI;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 
+@ConfigurationProperties("storage")
 public class StorageProperties {
 
-	public URI getLocation() {
-		// TODO Auto-generated method stub
-		return null;
+	private String location = "upload-dir";
+
+	public String getLocation() {
+		return location;
+	}
+
+	public void setLocation(String location) {
+		this.location = location;
 	}
 
 }
