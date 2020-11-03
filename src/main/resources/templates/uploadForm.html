@@ -1,4 +1,4 @@
-<html xmlns:th="https://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org">
 <body>
 
 	<div th:if="${message}">
@@ -10,11 +10,11 @@
 			<table>
 				<tr>
 					<td>File to upload:</td>
-					<td><input type="file" name="file" /></td>
+					<td><input type="file" name="file"></td>
 				</tr>
 				<tr>
 					<td></td>
-					<td><input type="submit" value="Upload" /></td>
+					<td><input type="submit" value="Upload"></td>
 				</tr>
 			</table>
 		</form>
@@ -22,8 +22,7 @@
 
 	<div>
 		<ul>
-			<li th:each="file : ${files}"><a th:href="${file}"
-				th:text="${file}"></a></li>
+			<li th:each="file : ${files}"><a th:href="${file}" th:text="${file}"></a></li>
 		</ul>
 	</div>
 
