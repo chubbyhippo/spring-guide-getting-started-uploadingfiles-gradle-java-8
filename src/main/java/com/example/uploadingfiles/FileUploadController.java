@@ -50,7 +50,7 @@ public class FileUploadController {
 		Resource file = storageService.loadAsResource(filename);
 		return ResponseEntity.ok()
 				.header(HttpHeaders.CONTENT_DISPOSITION,
-						"attachment; filnamme=\"" + file.getFilename() + "\"")
+						"attachment; filename=\"" + file.getFilename() + "\"")
 				.body(file);
 	}
 
